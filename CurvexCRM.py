@@ -64,7 +64,7 @@ def sendPushNotification(user):
     print("Hey " + users.iloc[user]["user_name"]+" come back to us!")
 
 loadUsers()
-#clear()
+clear()
 print("Curvex CRM mockup")
 usersPrint = users.drop("email",axis = 1).rename(columns={'user_name':'Name'})
 print(usersPrint.to_string())
