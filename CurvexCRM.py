@@ -54,7 +54,7 @@ def sendemail(user,performance):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message)
-
+    print("Email Sent")
 def loadUsers():
     global users
     users = pandas.read_csv (usersFile,index_col= 0)
